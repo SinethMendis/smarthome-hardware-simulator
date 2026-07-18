@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+
+# Build and coverage outputs
+dist/
+build/
+coverage/
+.nyc_output/
+lib-cov/
+
+# Runtime and logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+firebase-debug.log*
+firebase-debug.*.log*
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Firebase local cache and emulator data
+.firebase/
+firebase-data/
+*.firebaseio.com.json
+
+# Environment and secrets
+.env
+.env.*
+!.env.example
+*.local
+*.secret
+*.pem
+*.key
+serviceAccountKey.json
+
+# Package manager caches
+.npm/
+.pnpm-store/
+.yarn/
+
+# Tooling caches
+.eslintcache
+.cache/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# Local/copilot agent workspace metadata
+.agents/
