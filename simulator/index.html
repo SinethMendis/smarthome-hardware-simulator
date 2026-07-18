@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart Home Simulator</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="header__title">Smart Home Simulator</h1>
+
+      <div class="header__controls">
+        <p id="connection-status" class="connection-status" aria-live="polite">
+          <span class="connection-status__dot" aria-hidden="true"></span>
+          <span class="connection-status__text">Connecting…</span>
+        </p>
+        <label class="floor-selector" for="floor-select">
+          <span class="floor-selector__label">Floor</span>
+          <select id="floor-select" class="floor-selector__select" disabled>
+            <option value="">Loading floors…</option>
+          </select>
+        </label>
+      </div>
+    </header>
+
+    <p id="connection-banner" class="connection-banner" hidden></p>
+
+    <main class="main">
+      <section
+        id="device-grid"
+        class="device-grid"
+        aria-label="Device grid"
+      ></section>
+
+      <details id="usage-log-panel" class="usage-log-panel" open>
+        <summary class="usage-log-panel__summary">Recent activity</summary>
+        <p id="usage-log-status" class="usage-log-panel__status">
+          Loading usage logs…
+        </p>
+        <ul
+          id="usage-log-list"
+          class="usage-log-list"
+          aria-live="polite"
+        ></ul>
+      </details>
+    </main>
+
+    <script type="module" src="app.js"></script>
+  </body>
+</html>
